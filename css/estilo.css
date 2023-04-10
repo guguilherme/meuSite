@@ -1,0 +1,218 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to left, rgb(118, 36, 185), rgb(241, 53, 157), rgb(189, 154, 253));
+    background-size: 500% 100%;
+    animation: degrade-animado 3s infinite alternate ;
+    -webkit-animation: degrade-animado 3s infinite alternate;  
+}
+
+#principal{
+   background-color: #000000;
+   color: white; 
+   margin-top: 40px;
+   display: flex;
+   align-items: center;
+ 
+
+}
+
+div.navbar-nav{
+   margin-left: auto;
+   /*width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;*/
+}
+
+.bg-blue{
+    /*background-color: #181d31;*/
+    background-color: #000000;
+}
+
+#texto-principal{
+    font-size: 3.5em;
+    letter-spacing: -4px;
+    line-height: 100%;
+}
+
+.degrade{
+    /* fazendo o gradient */
+
+    background-image: linear-gradient(to left, rgb(118, 36, 185), rgb(241, 53, 157), rgb(189, 154, 253));
+    background-size: 500% 100%;
+    animation: degrade-animado 3s infinite alternate ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.botoes{
+    background-image: linear-gradient(to left, rgb(118, 36, 185), rgb(241, 53, 157), rgb(189, 154, 253));
+    background-size: 500% 100%;
+    animation: degrade-animado 3s infinite alternate ;
+    -webkit-animation: degrade-animado 3s infinite alternate;
+}
+
+@keyframes degrade-animado{
+
+    0%{
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+/* ANIMACAO SCROLL*/
+
+
+
+/*APRESENTAÇÃO*/
+
+#sobre-mim{
+    padding: 30px;
+}
+
+.texto-apresentacao{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+/*CONHECIMENTOS*/
+
+#conhecimentos{
+    margin-top: 40px;
+}
+
+.titulo{
+    letter-spacing: -2.5px;
+}
+
+.icone{
+    width: 50px;
+}
+
+.juncao-icones{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.titulo-habilidade{
+    color: #fff;
+    margin-top: 15px;
+}
+
+/*PROJETOS*/
+
+#meus-projetos{
+    margin-top: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.titulo-projetos{
+    
+    color: #fff;
+}
+
+.imagem-projetos{
+    width: 200px;
+}
+
+.transparente{
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+}
+
+.texto-projeto{
+    color: #fff;
+}
+
+.sessao-projeto{
+    margin-top: 40px;
+}
+
+/*Objetivo*/
+
+#objetivo{
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.texto-objetivo{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+/*CONTATO*/
+
+#contato{
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+.parte-contato{
+    margin-top: 20px;
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) { 
+    #texto-principal{
+        font-size: 2.5em;
+        letter-spacing: -4px;
+        line-height: 100%;
+    }
+
+    .texto2-principal{
+        font-size: 1.5em;
+    }
+
+    .imagem-principal{
+        margin-top: 30px;
+    }
+  
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) { 
+    .icone{
+        margin-top: 30px;
+    }
+    .imagem-projetos{
+        width: 150px;
+    }
+
+    .juncao-icones{
+        margin-top: 10px;
+    }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) { 
+ 
+ }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) { 
+  
+ }
